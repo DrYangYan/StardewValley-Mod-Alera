@@ -1,0 +1,12 @@
+{
+  "Name": "新年红包",
+  "Description": "恭喜发财，红包拿来！",
+  "Category": "Flower",
+  "Edibility": -300,
+  "Price": 888,
+  "IsColored": false,
+  "Recipe": null,
+   "CanPurchase":true,
+   "PurchaseFrom": "Pierre",
+   "PurchasePrice":8888
+}

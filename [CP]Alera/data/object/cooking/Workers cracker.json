@@ -1,0 +1,85 @@
+{
+    "Changes": [
+      {
+        "Action": "Load",   //加载图片用
+        "Target": "Mods/Dr.Alera/Workers Cracker",    //食物的贴图，和下面的Texture对应。中间的是你的模组唯一识别id，最后面的是你这个食物的名称（不是id！）
+        "FromFile": "assets/image/Workers Cracker.png"   //图片的位置
+      },
+      {
+        "Action": "EditData",
+        "Target": "Data/Objects",
+        "Entries": {
+          "Al_Workers_Cracker": {
+            "Name": "Workers Cracker",
+            "DisplayName": "工人饼干",
+            "Description": "看起来毫无食欲...真不知道joja的工人是怎么吃下去的",
+            "Type": "Cooking",
+            "Category": -7,
+            "Price": 75,
+            "Texture": "Mods\\Dr.Alera\\Workers Cracker",
+            "SpriteIndex": 0,
+            "Edibility": 200,
+            "IsDrink": false,
+            "ExcludeFromFishingCollection": false,
+            "ExcludeFromShippingCollection": false,
+            "ExcludeFromRandomSale": false,
+            "Buffs": [
+              {
+                "Duration": 600,
+                "CustomAttributes": {
+                  "FarmingLevel": 3,
+                  "FishingLevel": 0,
+                  "MiningLevel": 3,
+                  "LuckLevel": 0,
+                  "ForagingLevel": 0,
+                  "MaxStamina": 0,
+                  "MagneticRadius": 0,
+                  "Speed": 0.5,
+                  "Defense": 0,
+                  "Attack": 0
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "Action": "EditData", 
+        "Target": "Data/CookingRecipes", 
+      
+        "Entries": { 
+          "Asparagus Soup": " 3 / 25 5 / DS_Asparagus_Soup / s Farming 1 /" 
+        }
+      },
+          {
+              "Log": "Add Gift Tastes for NPCs",
+              "Action": "EditData",
+              "Target": "Data/NPCGiftTastes",
+              "TextOperations": [
+      { "Operation": "Append",
+                "Target": ["Entries", "Universal_like"],
+                "Value": "DS_Asparagus_Soup",
+                "Delimiter": " "
+              },
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Leo", "5"],
+          "Value": "DS_Asparagus_Soup", 
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Krobus", "5"],
+          "Value": "DS_Asparagus_Soup", 
+          "Delimiter": " "
+        },
+        {
+          "Operation": "Append",
+          "Target": ["Fields", "Willy", "5"],
+          "Value": "DS_Asparagus_Soup", 
+          "Delimiter": " "
+        }
+      ]
+      }
+    ]
+  }

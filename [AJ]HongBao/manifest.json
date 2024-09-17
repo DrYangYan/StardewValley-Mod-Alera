@@ -1,0 +1,11 @@
+{
+    "Name": "Alera",
+    "Author": "DrYangYan",
+    "Version": "1.0.0",
+    "Description": "DayDayDream",
+    "UniqueID": "Dr.Alera",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}
